@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Objektide tuvastamine</string>
+    <string name="take_picture">Pildista</string>
+    <string name="name">Objekti nimetus</string>
+    <string name="Choice">Vali galeriist</string>
+    <string name="Back">Tagasi</string>
+    <string name="Study">Opi</string>
+    <string name="Questions">Test</string>
+    <string name="Start">Alusta</string>
+    <string name="Result">Tulemus</string>
+    <string name="takePicText">Pildista</string>
+    <string name="names">Nimetus</string>
+    <string name="classificResult">Tuvastamise tulemus:</string>
+</resources>

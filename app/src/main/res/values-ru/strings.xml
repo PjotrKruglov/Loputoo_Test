@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Распознавание объектов</string>
+    <string name="Back">Назад</string>
+    <string name="name">Название объекта</string>
+    <string name="take_picture">Сфотографируй</string>
+    <string name="Choice">Выбери из галереи</string>
+    <string name="Study">Изучи</string>
+    <string name="Questions">Тест</string>
+    <string name="Start">Начать</string>
+    <string name="Result">Результат</string>
+    <string name="takePicText">Сфотографируй</string>
+    <string name="names">Название</string>
+    <string name="classificResult">Результат распознавания:</string>
+</resources>

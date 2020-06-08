@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Object recognition</string>
+    <string name="take_picture">Take picture</string>
+    <string name="name">Object name</string>
+    <string name="Choice">Galery select</string>
+    <string name="Back">Return</string>
+    <string name="Study">Study</string>
+    <string name="Questions">Test</string>
+    <string name="Start">Start</string>
+    <string name="Result">Result</string>
+    <string name="takePicText">Take picture of</string>
+    <string name="names">Name</string>
+    <string name="classificResult">Classification result:</string>
+</resources>

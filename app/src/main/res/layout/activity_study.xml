@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyActivity">
+
+    <ImageView
+        android:id="@+id/Picture"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_above="@+id/objectNameStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/objectNameStudy"
+        android:layout_marginTop="-400dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:contentDescription="Recieved Picture" />
+    <TextView
+        android:id="@+id/objectResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/objectNameStudy"
+        android:layout_marginTop="-50dp"
+        android:text="@string/classificResult"
+        android:layout_centerInParent = "true"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/objectNameStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="40sp"
+        android:text="@string/name"
+        android:layout_centerInParent = "true"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objectNameStudy"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Valik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFCFC"
+            android:text="@string/Choice"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/TakePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFCFC"
+            android:layout_marginTop="40dp"
+            android:onClick="onSelect"
+            android:text="@string/take_picture"
+            app:layout_constraintStart_toEndOf="@+id/Valik"
+            app:layout_constraintTop_toBottomOf="@+id/objectNameStudy" />
+
+        <Button
+            android:id="@+id/ToChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFCFC"
+            android:onClick="onBack"
+            android:text="@string/Back"
+            app:layout_constraintStart_toEndOf="@+id/Valik"
+            app:layout_constraintTop_toBottomOf="@+id/objectNameStudy" />
+    </LinearLayout>
+
+</RelativeLayout>

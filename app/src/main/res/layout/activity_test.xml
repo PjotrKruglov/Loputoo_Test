@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/TakePicture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/camera"
+        android:onClick="onSelect"
+        android:text="@string/take_picture"
+        android:textColor="#FFFCFC"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/takePicText"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/objectname"
+        android:layout_marginTop="-50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <TextView
+        android:id="@+id/objectname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/names"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/TakePicture"
+        android:layout_marginTop="-75dp"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:id="@+id/ToTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TakePicture"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFCFC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:onClick="onBack"
+        android:text="@string/Back"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="578dp" />
+</RelativeLayout>
